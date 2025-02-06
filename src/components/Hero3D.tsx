@@ -1,10 +1,18 @@
 "use client";
 
-import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  Code,
+  Briefcase,
+} from "lucide-react";
 
 export default function Hero3D() {
   return (
-    <div className="min-h-screen bg-gray-900 relative overflow-hidden">
+    <div className="min-h-screen bg-black relative overflow-hidden">
       {/* 3D Model Background */}
       <div className="absolute inset-0 z-0">
         <iframe
@@ -72,11 +80,19 @@ export default function Hero3D() {
           </div>
 
           {/* CTA Button */}
-          <a href="#project">
-            <button className="mt-12 px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors animate-fadeIn">
-              Explore My Projects
-            </button>
-          </a>
+          <div className="flex gap-4 justify-center items-center md:flex-row flex-col mt-12">
+            <a href="#project">
+              <button className=" px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors animate-fadeIn inline-flex gap-2 font-semibold items-center">
+                <Code /> My Projects
+              </button>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1gjI0omq_FCDll5l7ywTexvtCSYH-E8k6/view?usp=sharing">
+              <button className=" px-8 py-3 border-2 border-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors animate-fadeIn inline-flex gap-2 font-semibold items-center">
+                <Briefcase /> My Resume
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

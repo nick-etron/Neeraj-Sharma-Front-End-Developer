@@ -79,6 +79,7 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+     
     },
   },
 };

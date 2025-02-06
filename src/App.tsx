@@ -285,7 +285,7 @@ function App() {
                       <img
                         src={Fastfood}
                         alt="FastFood OS Project"
-                        className="rounded- shadow-2xl w-full h-[300px] object-cover"
+                        className="rounded-lg shadow-2xl w-full h-[300px] object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60" />
                     </div>

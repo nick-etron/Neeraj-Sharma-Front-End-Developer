@@ -130,7 +130,7 @@ export function About() {
             <div className="w-64 h-64 bg-blue-500/10 rounded-full blur-3xl" />
           </div>
           <a
-            href="#contact"
+            href="mailto:nicksharma724@gmail.com"
             className="relative inline-flex items-center gap-2 px-8 py-3 text-lg font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-500 transition group"
           >
             <Globe className="w-5 h-5 group-hover:rotate-12 transition-transform" />
