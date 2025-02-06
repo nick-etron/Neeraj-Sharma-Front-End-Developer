@@ -17,6 +17,9 @@ import {
   CheckCircle2,
   ArrowUpRight,
 } from "lucide-react";
+import Alysei from "./images/alysei.png";
+import Zeko from "./images/zeko.png";
+import Fastfood from "./images/fastfood.png";
 import Hero3D from "./components/Hero3D";
 import { SkillsSection } from "./components/SkillsSection";
 import { About } from "./components/About";
@@ -130,7 +133,10 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-gray-900 relative overflow-hidden">
+      <section
+        id="project"
+        className="py-20 bg-gray-900 relative overflow-hidden"
+      >
         {/* Decorative Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl" />
@@ -154,7 +160,7 @@ function App() {
                     <div className="absolute -inset-1  rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=2070"
+                        src={Alysei}
                         alt="Alysei Platform"
                         className="rounded-lg shadow-2xl w-full h-[300px] object-cover"
                       />
@@ -216,7 +222,7 @@ function App() {
                     <div className="absolute -inset-1  rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2015"
+                        src={Zeko}
                         alt="Zekosoft Website"
                         className="rounded-lg shadow-2xl w-full h-[300px] object-cover"
                       />
@@ -275,11 +281,11 @@ function App() {
                 <div className="flex flex-col lg:flex-row gap-8">
                   <div className="lg:w-1/2 relative group-hover:transform group-hover:scale-[1.02] transition-transform duration-500">
                     <div className="absolute -inset-1  rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
-                    <div className="relative">
+                    <div className="relative rounded-lg overflow-hidden">
                       <img
-                        src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1974"
+                        src={Fastfood}
                         alt="FastFood OS Project"
-                        className="rounded-lg shadow-2xl w-full h-[300px] object-cover"
+                        className="rounded- shadow-2xl w-full h-[300px] object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60" />
                     </div>
